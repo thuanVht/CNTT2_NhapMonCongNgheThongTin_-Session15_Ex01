@@ -1,0 +1,11 @@
+
+
+* **Sơ đồ luồng:** Ctrl + S $\rightarrow$ Ghi SSD cục bộ $\rightarrow$ Sync Engine phát hiện $\rightarrow$ Đẩy qua HTTPS $\rightarrow$ Lưu bản sao & Version History trên Cloud.
+* **Xung đột phiên bản:** Máy không tự ghi đè. Hệ thống giữ bản gốc trên mây và tự tạo bản phụ `Conflict Copy` trên máy để nhóm mở ra so sánh rồi hợp nhất.
+* **Bẫy dữ liệu (Rớt mạng/Sập nguồn):** Tiến trình lưu tạm (Temp Staging) giúp file không bị hỏng. Khi có mạng lại, hệ thống tự đồng bộ tiếp từ điểm dừng mà không mất dữ liệu.
+
+**3 Bước thiết lập:**
+
+1. **Tạo thư mục chuẩn:** Tạo `D:\PTIT_Museum_3D\` trên SSD để chứa toàn bộ file dự án.
+2. **Cài app Cloud:** Dùng Google Drive/OneDrive, chọn chế độ **Real-time Sync** và bật **Always keep on this device**.
+3. **Bật & Test Version History:** Mở Cloud trên web, kiểm tra lịch sử phiên bản và thử chọn **Restore** về bản cũ để quen thao tác khi gặp sự cố.
